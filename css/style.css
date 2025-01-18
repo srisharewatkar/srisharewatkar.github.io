@@ -3,8 +3,13 @@ body {
     font-family: 'Constantia','Futura','Poppins', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Baskerville Old Face','Libre Baskerville', serif;
+}
+
+#headshot {
+    max-height: 500px;
+    width:auto;
 }
 
 footer p {

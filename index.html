@@ -3,27 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navigation Panel</title>
+  <title>Srisha Rewatkar</title>
+  <meta name="author" content="Srisha Rewatkar">
+  <meta name="description" content="Online Portfolio for Srisha Rewatkar, Mechanical and Aerospace Engineer">
   
-  <!-- Bootstrap CSS -->
+  <!--Icons from Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-    <!--Sidebar-->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h1> Srisha Rewatkar</h1>
+    <div id='wrapper' class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <nav class="col-lg-2 col-md-3 sidebar d-none d-md-block p-3">
+            <h4 class="text-center py-3"> Srisha Rewatkar </h4>
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a href="#home">Home</a> </li>
+                <li class="nav-item"> <a href="#about">About</a> </li>
+                <li class="nav-item"> <a href="#projects">Projects</a> </li>
+                <li class="nav-item"> <a href="#blog">Blog</a> </li>
+                <li class="nav-item"> <a href="#contact">Contact</a> </li>
+            </ul>            
+          </nav>
+    
+          <!-- Mobile Navbar -->
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark d-md-none w-100">
+            <div class="container-fluid">
+              <a class="navbar-brand"> Srisha Rewatkar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="mobileSidebar">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                  <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+              </div>
             </div>
-        </nav> 
+          </nav>
+    
+          <!-- Main Content -->
+          <main class="col-lg-10 col-md-9 px-4">
+            <section id="home" class="mt-5">
+                <div class="mt-4 row">
+                    <div class="col-md-6">
+                        <p> Hey!</p>
+                        <h2> I'm Srisha Rewatkar </h2>
+                        <h3> Mechanical and Software Engineer</h3>
+                        <a href="docs/SrishaResume.pdf" class="btn btn-primary" download="yourfile.pdf">
+                            <i class="fas fa-download"></i> Download my Resume
+                        </a>
+                        <a href="docs/SrishaCV.pdf" class="btn btn-primary" download="yourfile.pdf">
+                            <i class="fas fa-download"></i> Download my CV
+                        </a>
+                    </div>
+                   <span class="col-md-4 mt-2"> <img id="headshot" src="images/SrishaR.jpg" class ="img-fluid rounded-circle"></span>  
+                </div>
+            </section>
 
-        
+            <section id="about" class="mt-5">
+              <h1>About</h1>
+              <p>Hey! I'm a 3rd year Mechanical Engineering and Computer Science student 
+                at the University of California, Berkeley. I'm interested in the Aerospace, Automotive, and Mechatronics sector!</p>
+            <p> I think all my interest have one thing in common: How do we understand the world around us?</p>
+            <p> At Berkeley, I've had the opportunity to be involved in Physics, Astrophysics, Software Engineering, 
+                and Data Science along with my Mechanical Engineering Curriculum!</p>
+            <p> Feel free to check out some of my projects!</p>
+            </section>
+            <section id="experiences" class="mt-5">
+                <div> 
+                <h1 class="exp-head"> Education </h2>
+                    <div class="row">
+                        <span  class="col-md-8">
+                            <h4> University of California, Berkeley</h4>
+                            <p> B.S Mechanical Engineering <br> 
+                            <small> Minor: Computer Science </small> </p> 
+                        </span>
+                        <span class="col-md-3">
+                            <h5> <em> MAY 2026</em> </h5>
+                        </span>
+                    </div>
+                    <div>
+                        <p> Relevant Coursework</p>
+                    </div>
+                </div>
+                
+                <h1> Experiences</h1>
+                    <div class="exp-item">
+                        <div class="row">
+                            <span  class="col-md-8">
+                                    <h4>Mahindra Automotive North America </h4>
+                                    <b> Body, Closures, and GSM Intern  |  Auburn Hills, MI</b>
+                            </span>
+                            <span class="col-md-3">
+                                <h5> <em> May 2024 <br> - <br> Jul 2024</em> </h5>
+                            </span>
+                        </div>
+                        <div class="col-md-7">
+                            <span> <em> Performed Manufacturing Studies to improve ergonomics for SUV  </em> </span>
+                            <ul>
+                                <li> Integrated ergonomic principles to prototype inner door handle to improve user interaction and accessibility.</li>
+                                <li> Utilized CATIA GSD for surface modelling to refine designs of components and eliminate interferences. </li>
+                                <li>Conducted a vehicular Body-in-White (BIW) cross sectional study for SUVs, and optimized structural integrity through
+                                    meticulous analysis of section modulus, moment of inertia, and material properties.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-   <!--Content-->
-        <div id="content">
+                    <div class="exp-item">
+                        <div class="row">
+                            <span  class="col-md-8">
+                                    <h4>Mahindra Automotive North America </h4>
+                                    <b> Body, Closures, and GSM Intern  |  Auburn Hills, MI</b>
+                            </span>
+                            <span class="col-md-3">
+                                <h5> <em> May 2024 <br> - <br> Jul 2024</em> </h5>
+                            </span>
+                        </div>
+                        <div class="col-md-7">
+                            <span> <em> Performed Manufacturing Studies to improve ergonomics for SUV  </em> </span>
+                            <ul>
+                                <li> Integrated ergonomic principles to prototype inner door handle to improve user interaction and accessibility.</li>
+                                <li> Utilized CATIA GSD for surface modelling to refine designs of components and eliminate interferences. </li>
+                                <li>Conducted a vehicular Body-in-White (BIW) cross sectional study for SUVs, and optimized structural integrity through
+                                    meticulous analysis of section modulus, moment of inertia, and material properties.</li>
+                            </ul>
+                        </div>
+                    </div>
 
+            </section>
+            <section id="projects" class="mt-5">
+              <h1>Projects</h1>
+              <p>Details about your projects go here.</p>
+            </section>
+            <section id="blog" class="mt-5">
+              <h1>Blog</h1>
+              <p>Your blog posts go here.</p>
+            </section>
+            <section id="contact" class="mt-5">
+              <h1>Contact</h1>
+              <p>Your contact details go here.</p>
+            </section>
+          </main>
         </div>
-    </div>
+      </div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
