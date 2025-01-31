@@ -6,12 +6,16 @@
   <title>Srisha Rewatkar</title>
   <meta name="author" content="Srisha Rewatkar">
   <meta name="description" content="Online Portfolio for Srisha Rewatkar, Mechanical and Aerospace Engineer">
-  
+  <!--google fonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+    </style>
   <!--Icons from Font Awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div id='wrapper' class="container-fluid">
@@ -19,9 +23,10 @@
           <!-- Sidebar -->
           <nav class="col-lg-2 col-md-3 sidebar d-none d-md-block p-3">
             <h4 class="text-center py-3"> Srisha Rewatkar </h4>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-center">
                 <li class="nav-item"> <a href="#home">Home</a> </li>
                 <li class="nav-item"> <a href="#about">About</a> </li>
+                <li class="nav-item"> <a href="#exp">Experience</a> </li>
                 <li class="nav-item"> <a href="#projects">Projects</a> </li>
                 <li class="nav-item"> <a href="#blog">Blog</a> </li>
                 <li class="nav-item"> <a href="#contact">Contact</a> </li>
@@ -36,10 +41,11 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
     
-              <div class="collapse navbar-collapse" id="mobileSidebar">
+              <div class="collapse navbar-collapse text-center" id="mobileSidebar">
                 <ul class="navbar-nav">
                   <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                   <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                  <li class="nav-item"> <a href="#exp" class="nav-link">Experience</a> </li>
                   <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                   <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
                   <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
@@ -51,27 +57,31 @@
           <!-- Main Content -->
           <main class="col-lg-10 col-md-9 px-4">
             <section id="home" class="mt-5">
-                <div class="mt-4 row">
+                <div class="mt-4 row align-items-center ">
                   <div class="col-md-8 text-center">
-                        <p> Hey!</p>
-                        <h2> I'm Srisha Rewatkar </h2>
-                        <h3> Mechanical Engineer and Computer/Data Scientist</h3>
+                        <span>
+                          <p class="h5"> Hey there!</p>
+                          <h2> I'm Srisha Rewatkar </h2>
+                          <p class="h5"> Mechanical Engineer & <br> Computer/Data Scientist</p>
+                        </span>
                         <!--div class="row"-->
+                        <span>
                           <a href="docs/SrishaResume.pdf" class="btn btn-primary m-1" download="SrishaRewatkar_Resume.pdf">
                               <i class="fas fa-download"></i> Download my Resume
                           </a>
                           <a href="docs/SrishaCV.pdf" class="btn btn-primary m-1" download="SrishaRewatkar_CV.pdf">
                               <i class="fas fa-download"></i> Download my CV
                           </a>
+                        </span>
                         <!--/div-->
                   </div>
-                  <div class="col-md-4"> 
+                  <div class="col-md-4 text-center mt-3 mt-md-0"> 
                     <img id="headshot" src="images/SrishaR.jpg" class ="img-fluid rounded-circle">
                   </div>  
                 </div>
             </section>
 
-            <section id="about" class="mt-5">
+            <section id="about" class="mt-5 text-center text-md-start">
               <h1>About</h1>
               <p>Hey! I'm a 3rd year Mechanical Engineering and Computer Science student 
                 at the University of California, Berkeley. I'm interested in the Aerospace, Automotive, and Mechatronics sector!</p>
@@ -80,77 +90,195 @@
                 and Data Science along with my Mechanical Engineering Curriculum!</p>
             <p> Feel free to check out some of my projects!</p>
             </section>
-            <section id="experiences" class="mt-5">
-                <div> 
-                <h1 class="exp-head"> Education </h2>
-                    <div class="row">
-                        <span  class="col-md-8">
-                            <h4> University of California, Berkeley</h4>
-                            <p> B.S Mechanical Engineering <br> 
-                            <small> Minor: Computer Science </small> </p> 
-                        </span>
-                        <span class="col-md-3">
-                            <h5> <em> MAY 2026</em> </h5>
-                        </span>
+
+            <section class="mt-5" id="exp">
+              <h1 class="text-center text-md-start"> Relevant Experience</h1>      
+              <div class="card p-3 mb-3">
+                <div class="row">
+                  <div class="col-lg-8 text-center text-md-start">
+                    <h3 class="fw-bold">Mahindra Automotive North America</h3>                  
+                    <p class="mb-lg-2 mb-0"><strong>Body, Closures, and GSM Intern</strong></p>
+                    <p class="text-muted d-lg-none">Auburn Hills, MI | May 2024 – July 2024</p>          
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">        
+                      <p class="text-muted text-end mb-0">May 2024 – July 2024</p>          
+                      <p class="text-muted text-end">Auburn Hills, MI</p>
+                  </div>        
+                </div>            
+                <ul>
+                      <li>Improved ergonomics of inner door handle using ergonomic principles to improve user interaction and 
+                        accessibility as per vehicle ergonomic standards.</li>
+                      <li>Analyzed inner door handle through FEA and first-principle analysis to minimize costs while retaining performance.</li>
+                      <li>Refined designs of components (drain hose) using CATIA GSD - surface modelling to eliminate interferences in assembly.</li>
+                      <li>Optimized structural integrity of Body-in-White (BIW), using A2MAC1 and Caresoft Iceberg benchmarking tools, to analyze competitors’ 
+                        BIW cross sections for SUVs through meticulous analysis of section modulus, moment of inertia, and material properties.</li>                        
+                </ul>
+              </div>
+              
+              <div class="card p-3 mb-3">
+                <div class="row">
+                  <div class="col-lg-8 text-center text-md-start">
+                      <h3 class="fw-bold">Formula SAE Electric at Berkeley</h3>
+                      <p class="mb-lg-2 mb-0"><strong>Aerodynamic Structures Engineer</strong></p>
+                      <p class="text-muted d-lg-none">Berkeley, CA | Aug 2023 – Current</p>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                      <p class="text-muted text-end mb-0">Aug 2023 – Current</p>
+                      <p class="text-muted text-end">Berkeley, CA</p>
+                  </div>
+                </div>
+                <ul>
+                    <li>Achieve top 20 placement for Design Event, demonstrating excellent design approach, rationale and validation techniques.</li>
+                    <li>Achieve 2nd place in Cost Event by cost-saving proposal that affected performance by less than 10%.</li>
+                    <li>Engineer rear wing mounting rods, using SolidWorks, by considering the center of pressure and center of mass to minimize aerodynamic disruption.</li>
+                    <li>Validate design with rigorous simulation of cyclical loads, comprehensive structural integrity analysis, and drag-lift coefficients using Ansys FEA & CFD.</li>
+                    <li>Ascertain accurate manufacturing and improved accuracy using datum strategies, constrained degrees of freedom, and GD&T.</li>
+                    <li>Work cross-functionally across subsystems to improve manufacturing efficiency and optimized workflow.</li>
+                </ul>
+              </div>
+
+              <div class="card p-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-md-start">
+                        <h3 class="fw-bold">Theoretical & Applied Fluid Dynamics Lab</h3>
+                        <p class="mb-lg-2 mb-0"><strong>Undergraduate Design & Manufacturing Researcher</strong></p>
+                        <p class="text-muted d-lg-none">Berkeley, CA | August 2024 – Current</p>
                     </div>
-                    <div>
-                        <p> Relevant Coursework</p>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="text-muted text-end mb-0">August 2024 – Current</p>
+                        <p class="text-muted text-end">Berkeley, CA</p>
                     </div>
                 </div>
-                
-                <h1> Experiences</h1>
-                    <div class="exp-item">
-                        <div class="row">
-                            <span  class="col-md-8">
-                                    <h4>Mahindra Automotive North America </h4>
-                                    <b> Body, Closures, and GSM Intern  |  Auburn Hills, MI</b>
-                            </span>
-                            <span class="col-md-3">
-                                <h5> <em> May 2024 <br> - <br> Jul 2024</em> </h5>
-                            </span>
-                        </div>
-                        <div class="col-md-7">
-                            <span> <em> Performed Manufacturing Studies to improve ergonomics for SUV  </em> </span>
-                            <ul>
-                                <li> Integrated ergonomic principles to prototype inner door handle to improve user interaction and accessibility.</li>
-                                <li> Utilized CATIA GSD for surface modelling to refine designs of components and eliminate interferences. </li>
-                                <li>Conducted a vehicular Body-in-White (BIW) cross sectional study for SUVs, and optimized structural integrity through
-                                    meticulous analysis of section modulus, moment of inertia, and material properties.</li>
-                            </ul>
-                        </div>
+                <ul>
+                    <li>Design rigid airfoil sails and structural elements on autonomous survey drones capable of precision maneuvering using rapid prototyping for energy-efficient marine navigation and surveying.</li>
+                    <li>Secure highly competitive NSF I-Corps training and funding to connect research to consumers and develop start-up.</li>
+                </ul>
+            </div>
+            
+            <div class="card p-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-md-start">
+                        <h3 class="fw-bold">UC Berkeley Dept. of Mechanical Engineering</h3>
+                        <p class="mb-lg-2 mb-0"><strong>Academic Tutor</strong></p>
+                        <p class="text-muted d-lg-none">Berkeley, CA | August 2024 – January 2025</p>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="row">
-                            <span  class="col-md-8">
-                                    <h4>Mahindra Automotive North America </h4>
-                                    <b> Body, Closures, and GSM Intern  |  Auburn Hills, MI</b>
-                            </span>
-                            <span class="col-md-3">
-                                <h5> <em> May 2024 <br> - <br> Jul 2024</em> </h5>
-                            </span>
-                        </div>
-                        <div class="col-md-7">
-                            <span> <em> Performed Manufacturing Studies to improve ergonomics for SUV  </em> </span>
-                            <ul>
-                                <li> Integrated ergonomic principles to prototype inner door handle to improve user interaction and accessibility.</li>
-                                <li> Utilized CATIA GSD for surface modelling to refine designs of components and eliminate interferences. </li>
-                                <li>Conducted a vehicular Body-in-White (BIW) cross sectional study for SUVs, and optimized structural integrity through
-                                    meticulous analysis of section modulus, moment of inertia, and material properties.</li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="text-muted text-end mb-0">August 2024 – January 2025</p>
+                        <p class="text-muted text-end">Berkeley, CA</p>
                     </div>
+                </div>
+                <ul>
+                    <li>Prepared educational material for 120 students and aided professor in efficient instruction for the class Engin 29 – Manufacturing and Design Communication.</li>
+                    <li>Key principles taught: communicating manufacturing requirements using GD&T, designing for manufacturability, 3D visualization of designs, and employing efficient manufacturing techniques.</li>
+                </ul>
+            </div>
+            
+            <div class="card p-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-md-start">
+                        <h3 class="fw-bold">Engineering Student Services,<br>UC Berkeley College of Engineering</h3>
+                        <p class="mb-lg-2 mb-0"><strong>ESS Peer Advisor</strong></p>
+                        <p class="text-muted d-lg-none">Berkeley, CA | August 2024 – Current</p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="text-muted text-end mb-0">August 2024 – Current</p>
+                        <p class="text-muted text-end">Berkeley, CA</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Assist newly admitted, transfer, and continuing students and support engineering advisors in guiding students on coursework, school policies, career paths, and opportunities.</li>
+                </ul>
+            </div>
+            
+            <div class="card p-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-md-start">
+                        <h3 class="fw-bold">Inter University Centre for Astronomy and Astrophysics (IUCAA)</h3>
+                        <p class="mb-lg-2 mb-0"><strong>Research Apprentice</strong></p>
+                        <p class="text-muted d-lg-none">Pune, India | April 2018 – April 2019</p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="text-muted text-end mb-0">April 2018 – April 2019</p>
+                        <p class="text-muted text-end">Pune, India</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Prototyped Radio Telescope from a TV satellite dish and measured the angular diameter of the sun using interferometry.</li>
+                    <li>Developed Brownian Motion simulations in Python as education materials for outreach programs.</li>
+                </ul>
+            </div>
+            
+            <div class="card p-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-md-start">
+                        <h3 class="fw-bold">Infosys Catch Them Young Program</h3>
+                        <p class="mb-lg-2 mb-0"><strong>Summer Intern</strong></p>
+                        <p class="text-muted d-lg-none">Pune, India | April 2017 – April 2018</p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <p class="text-muted text-end mb-0">April 2017 – April 2018</p>
+                        <p class="text-muted text-end">Pune, India</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Won the Infosys Website Development Challenge by developing an e-commerce platform for electronic appliances and presenting a business plan.</li>
+                    <li>Completed Design Thinking, HTML, CSS, and JavaScript training.</li>
+                </ul>
+            </div>             
+          </section>
+      
+          <section class="mt-4 text-center text-md-start">
+              <h2 class="fw-bold border-bottom pb-2">Projects</h2>
+              <div class="card p-3 mb-3">
+                  <h3 class="fw-bold">Drag Reduction System (DRS) for FSAE</h3>
+                  <p>Developed autonomous DRS for rear-wing elements using ESP32s and MicroPython.</p>
+              </div>
+      
+              <div class="card p-3 mb-3">
+                  <h3 class="fw-bold">Wind Turbine & Tower</h3>
+                  <p>Designed a wind turbine with optimized airfoil for maximum efficiency.</p>
+              </div>
+          </section>
+      
+          <section class="mt-4 ">
+              <h2 class="fw-bold border-bottom pb-2">Independent Research</h2>
+              <div class="card p-3 mb-3">
+                  <h3 class="fw-bold">Modeling Dynamics of Thin Films</h3>
+                  <p>Developed laser-based experiments for industrial coatings and interferometers.</p>
+              </div>
+          </section>
+      
+          <section class="mt-4">
+              <h2 class="fw-bold border-bottom pb-2">Relevant Coursework</h2>
+              <p>Fluid Mechanics, Solid Mechanics, Data Structures, Thermodynamics, Mechanics and Dynamics, Electronics and IoT, Quantum Physics & Statistical Thermodynamics</p>
+          </section>
 
-            </section>
-            <section id="projects" class="mt-5">
+
+           
+            <section id="projects" class="mt-5 text-center text-md-start">
               <h1>Projects</h1>
+
+              <div class="card"> 
+                <img>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle "> mjnsjnsjn </h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a> 
+                  <a href="#" class="card-link">Card link</a>             
+                </div>
+
+              </div>
+
+
+
               <p>Details about your projects go here.</p>
             </section>
-            <section id="blog" class="mt-5">
+            <section id="blog" class="mt-5 text-center text-md-start">
               <h1>Blog</h1>
               <p>Your blog posts go here.</p>
             </section>
-            <section id="contact" class="mt-5">
+            <section id="contact" class="mt-5 text-center text-md-start">
               <h1>Contact</h1>
               <p>Your contact details go here.</p>
             </section>

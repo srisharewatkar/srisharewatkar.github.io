@@ -1,15 +1,18 @@
 /* General Styles */
 body {
-    font-family: 'Constantia','Futura','Poppins', sans-serif;
+    font-family: 'Poppins','Futura', sans-serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Baskerville Old Face','Libre Baskerville', serif;
+    font-family: 'Arvo','Baskerville','Libre Baskerville', serif;
 }
 
 #headshot {
-    max-height: 25vw;
+    max-height: 30vh;
+    
     width:auto;
+    height:auto;
+   
 }
 
 footer p {
