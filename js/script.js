@@ -21,3 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+function toggleSidebar() {
+    const colwidth = document.getElementById('navsidebarContainer');
+    const maincont = document.getElementById('maincont');
+    console.log("Sidebar toggled!");
+    colwidth.classList.toggle('col-md-2');
+    maincont.classList.toggle('col-md-10');
+    colwidth.classList.toggle('col-md-1');
+    maincont.classList.toggle('col-md-11');
+    colwidth.classList.toggle('navbarcollapsed');      
+  }

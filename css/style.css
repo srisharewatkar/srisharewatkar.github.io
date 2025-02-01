@@ -1,4 +1,7 @@
 /* General Styles */
+
+@import "~bootstrap/scss/bootstrap"; 
+
 body {
     font-family: 'Poppins','Futura', sans-serif;
 }
@@ -39,3 +42,26 @@ nav {
 main h2 {
     color: #007bff;
 }
+
+#navsidebarContainer {
+    background-color: aquamarine;
+    transition: all 0.3s ease-in-out;
+}
+
+#maincont {
+  transition: all 0.3s ease-in-out; /* Change 0.3s to your desired duration */
+}
+
+.navbarcollapsed {
+    display: none;
+}
+
+.flexdropdown {
+    flex: 0.5;
+}
+
+@media (min-width: 768px) {
+    .custom-flex {
+      flex: initial; /* or remove the flex style entirely */
+    }
+  }
