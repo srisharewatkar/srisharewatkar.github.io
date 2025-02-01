@@ -22,29 +22,54 @@
     <div id='wrapper' class="container-fluid">
         <div class="row">
           <!-- Sidebar -->
-          <nav id='navsidebarContainer' class="navbar navbar-dark bg-dark text-lg-center col-md-2 sidebar d-none d-md-block p-3">
-            <div class="text-center">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navsidebar" aria-controls="navsidebar" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleSidebar()">
+          <nav id='navsidebarContainer' class="navbar navbar-dark bg-dark flex-column
+          col-md-3 col-lg-2 d-none d-md-flex position-fixed">
+            <div class="d-flex justify-content-start pt-1">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navsidebar" aria-controls="navsidebar" aria-expanded="false" 
+              aria-label="Toggle navigation" onclick="toggleSidebar()">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
-            <div id="navsidebar" class="collapse collapse-horizontal show">
-              <h4 class="py-3 navbar-brand">Srisha <br> Rewatkar</h4>
+            <div class="navsidebar d-flex collapse collapse-horizontal flex-column show justify-content-center align-items-center flex-grow-1">
+              <h4 class="py-3 text-center text-light">Srisha Rewatkar</h4>
               <ul class="navbar-nav">
-                  <li class="nav-item"> <a href="#home">Home</a> </li>
-                  <li class="nav-item"> <a href="#about">About</a> </li>
-                  <li class="nav-item"> <a href="#exp">Experience</a> </li>
-                  <li class="nav-item"> <a href="#projects">Projects</a> </li>
-                  <li class="nav-item"> <a href="#blog">Blog</a> </li>
-                  <li class="nav-item"> <a href="#contact">Contact</a> </li>
-              </ul>
-            </div>            
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"><i class="bi bi-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><i class="bi bi-person"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exp" class="nav-link"><i class="bi bi-briefcase"></i> Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link"><i class="bi bi-folder"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link"><i class="bi bi-pencil-square"></i> Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a>
+                </li>
+            </ul>            
+            </div>  
+            <div class="navsidebar d-none collapse collapse-horizontal flex-column show justify-content-center align-items-center flex-grow-1">
+              <h4 class="py-3 text-center text-light">SR</h4>
+              <ul class="navbar-nav text-center">
+                  <li class="nav-item"> <a href="#home" class="nav-link"><i class="bi-house"></i></a> </li>
+                  <li class="nav-item"> <a href="#about" class="nav-link"><i class="bi-person"></i></a> </li>
+                  <li class="nav-item"> <a href="#exp" class="nav-link"><i class="bi-briefcase"></i></a> </li>
+                  <li class="nav-item"> <a href="#projects" class="nav-link"><i class="bi-folder"></i></a> </li>
+                  <li class="nav-item"> <a href="#blog" class="nav-link"><i class="bi-pencil-square"></i></a> </li>
+                  <li class="nav-item"> <a href="#contact" class="nav-link"><i class="bi-envelope"></i></a> </li>
+              </ul>                
+            </div>        
           </nav>
     
           <!-- Mobile Navbar -->
-          <nav class="navbar navbar-expand-md navbar-dark bg-dark d-md-none w-100">
+          <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark d-md-none w-100">
             <div class="container-fluid">
-              <h4 class="navbar-brand"> Srisha Rewatkar</h4>
+              <h4 class="navbar-brand">Srisha Rewatkar</h4>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -60,27 +85,26 @@
                 </ul>
               </div>
             </div>
-          </nav>
-    
+          </nav>        
           <!-- Main Content -->
-          <main id="maincont" class="col-md-10 px-4 px-lg-5">
-            <section id="home" class="my-5">
+          <main id="maincont" class="col offset-0 offset-md-3 offset-lg-2 px-4 px-xl-5">
+            <section id="home" class="mt-3 mt-md-0">
                 <div class="mt-4 row align-items-center ">
                   <div class="col-md-8 text-center">
-                        <span>
-                          <p class="h5"> Hey there!</p>
-                          <h2> I'm Srisha Rewatkar </h2>
-                          <p class="h5"> Mechanical Engineer & <br> Computer/Data Scientist</p>
-                        </span>
+                        <div>
+                          <!-- <p class="h5"> Hey there!</p> -->
+                          <h1>Srisha Rewatkar</h1>
+                          <p class="h5">Mechanical Engineer &<br>Computer/Data Scientist</p>
+                        </div>
                         <!--div class="row"-->
-                        <span>
+                        <div>
                           <a href="docs/SrishaResume.pdf" class="btn btn-primary m-1" download="SrishaRewatkar_Resume.pdf">
                               <i class="fas fa-download"></i> Download my Resume
                           </a>
                           <a href="docs/SrishaCV.pdf" class="btn btn-primary m-1" download="SrishaRewatkar_CV.pdf">
                               <i class="fas fa-download"></i> Download my CV
                           </a>
-                        </span>
+                        </div>
                         <!--/div-->
                   </div>
                   <div class="col-md-4 text-center mt-3 mt-md-0"> 
@@ -88,8 +112,8 @@
                   </div>  
                 </div>
             </section>
-
-            <section class="mb-5" id="about">
+            
+            <section class="my-4" id="about">
               <h1 class="text-center text-md-start">About</h1>        
                 <p>Hey! I'm a 3rd year Mechanical Engineering and Computer Science student 
                     at the University of California, Berkeley. I'm interested in the Aerospace, Automotive, and Mechatronics sector!</p>
@@ -116,7 +140,7 @@
               </div>
             </section> -->
 
-            <section class="mb-5" id="exp">
+            <section class="my-4" id="exp">
               <h1 class="text-center text-md-start">Relevant Experience</h1>      
               <div class="card p-3 mb-3">
                 <div class="row">
@@ -250,38 +274,10 @@
                     <li>Completed Design Thinking, HTML, CSS, and JavaScript training.</li>
                 </ul>
             </div>             
-          </section>
-      
-          <section class="mt-4 text-center text-md-start">
-              <h2 class="fw-bold border-bottom pb-2">Projects</h2>
-              <div class="card p-3 mb-3">
-                  <h3 class="fw-bold">Drag Reduction System (DRS) for FSAE</h3>
-                  <p>Developed autonomous DRS for rear-wing elements using ESP32s and MicroPython.</p>
-              </div>
-      
-              <div class="card p-3 mb-3">
-                  <h3 class="fw-bold">Wind Turbine & Tower</h3>
-                  <p>Designed a wind turbine with optimized airfoil for maximum efficiency.</p>
-              </div>
-          </section>
-      
-          <section class="mt-4 ">
-              <h2 class="fw-bold border-bottom pb-2">Independent Research</h2>
-              <div class="card p-3 mb-3">
-                  <h3 class="fw-bold">Modeling Dynamics of Thin Films</h3>
-                  <p>Developed laser-based experiments for industrial coatings and interferometers.</p>
-              </div>
-          </section>
-      
-          <section class="mt-4">
-              <h2 class="fw-bold border-bottom pb-2">Relevant Coursework</h2>
-              <p>Fluid Mechanics, Solid Mechanics, Data Structures, Thermodynamics, Mechanics and Dynamics, Electronics and IoT, Quantum Physics & Statistical Thermodynamics</p>
-          </section>
-
-
-           
-            <section id="projects" class="mt-5 text-center text-md-start">
-              <h1>Projects</h1>
+          </section>      
+                   
+          <section id="projects" class="my-4">
+              <h1 class="text-center text-md-start">Projects</h1>
 
               <div class="card"> 
                 <img>
@@ -299,12 +295,13 @@
 
               <p>Details about your projects go here.</p>
             </section>
-            <section id="blog" class="mt-5 text-center text-md-start">
-              <h1>Blog</h1>
+            <section id="blog" class="my-4">
+              <h1 class="text-center text-md-start">Blog</h1>
               <p>Your blog posts go here.</p>
             </section>
-            <section id="contact" class="mt-5 text-center text-md-start">
-              <h1>Contact</h1>
+
+            <section id="contact" class="my-4">
+              <h1 class="text-center text-md-start">Contact</h1>
               <p>Your contact details go here.</p>
             </section>
           </main>

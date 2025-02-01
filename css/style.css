@@ -24,7 +24,7 @@ footer p {
 
 /* Sidebar */
 nav {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 
@@ -44,9 +44,10 @@ main h2 {
 }
 
 #navsidebarContainer {
-    background-color: aquamarine;
+    height: 100vh;
     transition: all 0.3s ease-in-out;
 }
+
 
 #maincont {
   transition: all 0.3s ease-in-out; /* Change 0.3s to your desired duration */
@@ -56,6 +57,7 @@ main h2 {
     display: none;
 }
 
+
 .flexdropdown {
     flex: 0.5;
 }
@@ -64,4 +66,23 @@ main h2 {
     .custom-flex {
       flex: initial; /* or remove the flex style entirely */
     }
+  }
+
+#home {
+    height: 100vh;
+    /* background: url('https://via.placeholder.com/1500x1000') no-repeat center center;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+i {
+    font-size:x-large !important;
   }
